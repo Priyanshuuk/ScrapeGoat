@@ -1,5 +1,20 @@
+/* Base styles */
 body {
   background: linear-gradient(135deg, #2a4866 0%, #b7cae3 50%, #787443 100%);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+button, input, select {
+  font-family: inherit;
 }
 
 /* Container */
@@ -7,7 +22,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
   background-color: #ffffff;
   min-height: 100vh;
   color: #1e293b;
@@ -27,6 +42,11 @@ body {
   color: #1d2b42;
 }
 
+/* Logo */
+.logoimg {
+  height: 120px;
+}
+
 /* Icon base styles */
 .icon {
   width: 24px;
@@ -36,7 +56,6 @@ body {
   flex-shrink: 0;
 }
 
-/* Icon colors */
 .icon.blue {
   color: #2563eb;
 }
@@ -45,7 +64,9 @@ body {
   color: #16a34a;
 }
 
-
+.icon.amber {
+  color: #f59e0b;
+}
 
 /* Spinner animation */
 @keyframes spin {
@@ -78,7 +99,7 @@ body {
   margin-bottom: 4px;
 }
 
-/* Main grid layout */
+/* Layout */
 .main-grid {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +120,7 @@ body {
   flex-direction: column;
 }
 
-/* Panel titles */
+/* Panel headers */
 .panel h2 {
   font-size: 22px;
   font-weight: 700;
@@ -110,7 +131,7 @@ body {
   color: #1e293b;
 }
 
-/* Configuration panel labels */
+/* Labels */
 .config-panel label {
   display: block;
   font-weight: 600;
@@ -118,7 +139,7 @@ body {
   color: #334155;
 }
 
-/* Inputs and selects */
+/* Inputs */
 .config-panel input[type="url"],
 .config-panel input[type="text"],
 .config-panel select {
@@ -133,14 +154,13 @@ body {
   transition: border-color 0.3s ease;
 }
 
-.config-panel input[type="url"]:focus,
-.config-panel input[type="text"]:focus,
+.config-panel input:focus,
 .config-panel select:focus {
   border-color: #2563eb;
   outline: none;
 }
 
-/* Selector item box */
+/* Selector item */
 .selector-item {
   background-color: #f8fafc;
   padding: 10px 14px;
@@ -160,7 +180,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Remove button */
+/* Buttons */
 .remove-btn {
   background: none;
   border: none;
@@ -176,7 +196,6 @@ body {
   color: #b91c1c;
 }
 
-/* Add selector button */
 .add-btn {
   padding: 10px 18px;
   font-size: 15px;
@@ -192,13 +211,11 @@ body {
   background-color: #f1f5f9;
 }
 
-/* Action buttons container */
 .actions {
   display: flex;
   gap: 12px;
 }
 
-/* Buttons base style */
 .btn-primary,
 .btn-secondary {
   display: flex;
@@ -214,7 +231,6 @@ body {
   user-select: none;
 }
 
-/* Primary button */
 .btn-primary {
   background-color: #2563eb;
   color: white;
@@ -231,7 +247,6 @@ body {
   cursor: not-allowed;
 }
 
-/* Secondary button */
 .btn-secondary {
   background-color: white;
   color: #2563eb;
@@ -242,12 +257,11 @@ body {
   background-color: #ebf4ff;
 }
 
-/* Results panel */
+/* Results */
 .results-panel h2 {
   margin-bottom: 20px;
 }
 
-/* Error message */
 .error-msg {
   display: flex;
   align-items: center;
@@ -257,13 +271,11 @@ body {
   margin-bottom: 20px;
 }
 
-/* Results list */
 .results-list {
   max-height: 500px;
   overflow-y: auto;
 }
 
-/* Each result group */
 .result-group {
   margin-bottom: 24px;
 }
@@ -281,7 +293,7 @@ body {
   margin: 0;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 800px) {
   .main-grid {
     flex-direction: column;
@@ -291,8 +303,3 @@ body {
     max-height: none;
   }
 }
-
-.logoimg{
-    height: 120px;
-}
-
