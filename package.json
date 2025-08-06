@@ -2,7 +2,7 @@
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://priyanshuuk.github.io/ScrapeGoat",
+  "homepage": "https://priyanshuuk.github.io/ScrapeGoat/",
   "type": "module",
   "scripts": {
     "dev": "vite",
