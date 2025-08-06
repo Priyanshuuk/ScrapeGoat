@@ -2,7 +2,7 @@
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://priyanshuuk.github.io/ScrapeGoat/",
+  "homepage": "https://priyanshuuk.github.io/ScrapeGoat",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,8 +14,9 @@
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
