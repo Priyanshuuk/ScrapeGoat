@@ -39,7 +39,6 @@ function App() {
   const removeSelector = (index: number) => {
     setSelectors(prev => prev.filter((_, i) => i !== index));
   };
-
   const fetchScrapedData = async () => {
     setIsLoading(true);
     setError('');
@@ -83,7 +82,10 @@ function App() {
         <AlertTriangle className="icon amber" />
         <div>
           <p className="notice-title">Important</p>
-          <p>Start your backend server at <code>localhost:4000</code> before scraping.</p>
+          <p>Please respect the terms of service and robots.txt of any website you interact with.
+
+Unauthorized scraping of websites may violate their policies or applicable laws.
+The developer is not responsible for any misuse or legal consequences arising from improper use of this tool.</p>
         </div>
       </div>
 
